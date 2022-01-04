@@ -3,7 +3,7 @@ import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
   /** @type {import('./Models/Question').Question[]} */
-  Question = []
+  question = []
 }
 
 export const ProxyState = new Proxy(new AppState(), {

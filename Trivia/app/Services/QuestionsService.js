@@ -11,9 +11,9 @@ class QuestionsService {
     // console.log(res.data)
     res.data = res.data.filter(q => q.question)
     // map itterates over the collection of pojos from the server and turns them into class objects that we defined
-    let questions = res.data.results(c => new Question(q))
-    console.log(questions)
-    ProxyState.questions = questions
+    let question = res.data.results(c => new Question(q))
+    console.error(error)
+    ProxyState.question = question
   }
 
 }
